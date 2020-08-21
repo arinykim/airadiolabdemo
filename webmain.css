@@ -1,0 +1,143 @@
+
+a:link {text-decoration: none; color: white;}
+a:visited {text-decoration: none; color: white;}
+a:active {text-decoration: none; color: grey;}
+a:hover {text-decoration: underline; color: white;}
+
+
+.item1 {
+  height: 50px;
+}
+.item2 {
+  height: 50px;
+}
+.item3 {}
+.item4 {}
+.item5 {}
+.item6 {}
+.item7 {}
+.item8 {}
+.item9 {}
+.item10 {}
+.item11 {}
+.item12 {}
+.item13 {}
+.item14 {}
+.item15 {}
+.item16 {}
+.item17 {}
+.item18 {}
+.item19 {}
+.item20 {}
+.item21 {}
+.item22 {}
+.item23 {}
+.item24 {}
+.item25 {}
+
+
+.maingrid{
+  display: grid;
+  width: 510px;
+  height:500px;
+  grid-gap:10px;
+  border: 0px solid black;
+  margin: 0px auto;
+  margin-top:5rem;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  padding: 10px;
+  text-align: center;
+  background-image: url("/Users/themultidimensional/Documents/GitHub/airadiolabdemo/mainradio.jpg");
+  background-size:cover;
+  transition: background-color .3;
+}
+.maingrid div{
+  border: 1px solid black;
+  padding-top: 2rem;
+}
+.maingrid div:hover{
+  background-color: red;
+}
+
+
+.header{
+  padding-top: 100px;
+  display: block;
+  border: 1px solid grey;
+  width: 500px;
+  height: 200px;
+  margin: 0 auto;
+  margin-top:2rem;
+  margin-bottom: 2rem;
+  font-family:"liberation mono", monospace;
+  font-size:30px;
+  text-align: center;
+}
+
+.mainpagep{
+  display: block;
+  width: 500px;
+  height: auto;
+  margin: 0 auto;
+  font-family: sans-serif;
+  font-size-adjust: auto;
+  text-align: center;
+}
+
+
+/*button*/
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  float: right;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  float:right;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: red;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  float: right;
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: grey;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px grey;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
